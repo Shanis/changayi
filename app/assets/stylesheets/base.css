@@ -217,21 +217,13 @@ body {
     background-attachment: scroll;
     background-color: #729A43;
 	background-image: #b4e391; /* Old browsers */
-	background-image: -moz-linear-gradient(left, #70AC16 0%, #9AC954 30%, #9AC954 50%, #9AC954 70%, #70AC16 100%); /* FF3.6+ */
+	background-image: -moz-linear-gradient(left, #96BE68 0%, #ADCC89 30%, #ADCC89 50%, #ADCC89 70%, #96BE68 100%); /* FF3.6+ */
 	background-position: 0 0;
     background-repeat: repeat;
 }
 
 #content_container{
-	margin-left: auto;
-    margin-right: auto;
-	padding-bottom: 20px;
-    padding-top: 20px;
-	width: 80%;
-}
-
-#box {
-	-moz-box-shadow: -1px 1px 2px 2px #587634;
+	-moz-box-shadow: 0px 0px 2px 2px #587634;
     background-attachment: scroll;
     background-color: white;
     background-image: white;
@@ -244,6 +236,16 @@ body {
 	border-bottom-color: -moz-use-text-color;
     border-bottom-style: solid;
     border-bottom-width: 0;
+	min-height: 460px;
+	margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 0px;
+    padding-top: 20px;
+	width: 75%;
+}
+
+#box {
+
 }
 
 .footer {
