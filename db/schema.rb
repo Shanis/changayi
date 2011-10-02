@@ -11,15 +11,38 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110926222650) do
+ActiveRecord::Schema.define(:version => 20110929230153) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
     t.string   "hashed_password"
     t.string   "salt"
-    t.datetime "created_date"
-    t.datetime "last_modified_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+
+  create_table "vehicles", :force => true do |t|
+    t.integer  "year"
+    t.string   "make"
+    t.string   "model"
+    t.string   "style"
+    t.integer  "mileage"
+    t.string   "state"
+    t.string   "city"
+    t.float    "sale_price"
+    t.string   "photo_URL"
+    t.string   "status"
+    t.string   "short_description"
+    t.text     "details"
+    t.string   "vehicle_type"
+    t.string   "license_plate"
+    t.string   "contact_name"
+    t.string   "contact_phone"
+    t.string   "contact_email"
+    t.integer  "created_by"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

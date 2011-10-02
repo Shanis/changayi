@@ -1,0 +1,89 @@
+<%= form_for(@vehicle) do |f| %>
+  <% if @vehicle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
+
+      <ul>
+      <% @vehicle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :make %><br />
+    <%= f.text_field :make %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :style %><br />
+    <%= f.text_field :style %>
+  </div>
+  <div class="field">
+    <%= f.label :mileage %><br />
+    <%= f.number_field :mileage %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :sale_price %><br />
+    <%= f.text_field :sale_price %>
+  </div>
+  <div class="field">
+    <%= f.label :photo_URL %><br />
+    <%= f.text_field :photo_URL %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :short_description %><br />
+    <%= f.text_field :short_description %>
+  </div>
+  <div class="field">
+    <%= f.label :details %><br />
+    <%= f.text_area :details %>
+  </div>
+  <div class="field">
+    <%= f.label :vehicle_type %><br />
+    <%= f.text_field :vehicle_type %>
+  </div>
+  <div class="field">
+    <%= f.label :license_plate %><br />
+    <%= f.text_field :license_plate %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_name %><br />
+    <%= f.text_field :contact_name %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_phone %><br />
+    <%= f.text_field :contact_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_email %><br />
+    <%= f.text_field :contact_email %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br />
+    <%= f.number_field :created_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  year: 1
+  make: MyString
+  model: MyString
+  style: MyString
+  mileage: 1
+  state: MyString
+  city: MyString
+  sale_price: 1.5
+  photo_URL: MyString
+  created_on: 2011-09-27 14:27:51
+  last_updated_on: 2011-09-27 14:27:51
+  status: MyString
+  short_description: MyString
+  details: MyText
+  vehicle_type: MyString
+  license_plate: MyString
+  contact_name: MyString
+  contact_phone: MyString
+  contact_email: MyString
+  created_by: 1
+
+two:
+  year: 1
+  make: MyString
+  model: MyString
+  style: MyString
+  mileage: 1
+  state: MyString
+  city: MyString
+  sale_price: 1.5
+  photo_URL: MyString
+  created_on: 2011-09-27 14:27:51
+  last_updated_on: 2011-09-27 14:27:51
+  status: MyString
+  short_description: MyString
+  details: MyText
+  vehicle_type: MyString
+  license_plate: MyString
+  contact_name: MyString
+  contact_phone: MyString
+  contact_email: MyString
+  created_by: 1

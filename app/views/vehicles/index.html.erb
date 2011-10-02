@@ -1,0 +1,57 @@
+<h1>Listing vehicles</h1>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Make</th>
+    <th>Model</th>
+    <th>Style</th>
+    <th>Mileage</th>
+    <th>State</th>
+    <th>City</th>
+    <th>Sale price</th>
+    <th>Photo url</th>
+    <th>Status</th>
+    <th>Short description</th>
+    <th>Details</th>
+    <th>Vehicle type</th>
+    <th>License plate</th>
+    <th>Contact name</th>
+    <th>Contact phone</th>
+    <th>Contact email</th>
+    <th>Created by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vehicles.each do |vehicle| %>
+  <tr>
+    <td><%= vehicle.year %></td>
+    <td><%= vehicle.make %></td>
+    <td><%= vehicle.model %></td>
+    <td><%= vehicle.style %></td>
+    <td><%= vehicle.mileage %></td>
+    <td><%= vehicle.state %></td>
+    <td><%= vehicle.city %></td>
+    <td><%= vehicle.sale_price %></td>
+    <td><%= vehicle.photo_URL %></td>
+    <td><%= vehicle.status %></td>
+    <td><%= vehicle.short_description %></td>
+    <td><%= vehicle.details %></td>
+    <td><%= vehicle.vehicle_type %></td>
+    <td><%= vehicle.license_plate %></td>
+    <td><%= vehicle.contact_name %></td>
+    <td><%= vehicle.contact_phone %></td>
+    <td><%= vehicle.contact_email %></td>
+    <td><%= vehicle.created_by %></td>
+    <td><%= link_to 'Show', vehicle %></td>
+    <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
+    <td><%= link_to 'Destroy', vehicle, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vehicle', new_vehicle_path %>

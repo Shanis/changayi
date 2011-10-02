@@ -1,0 +1,843 @@
+*|*::-moz-fieldset-content {
+    display: block;
+    height: 100%;
+}
+fieldset > legend {
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: -moz-use-text-color;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: none;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: medium;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: -moz-use-text-color;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: none;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: medium;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: medium;
+    float: none;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    min-height: 0;
+    min-width: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    position: static;
+    white-space: nowrap;
+    width: -moz-fit-content;
+}
+legend {
+    display: block;
+}
+fieldset {
+    border-bottom-color: threedface;
+    border-bottom-style: groove;
+    border-bottom-width: 2px;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: threedface;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: groove;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 2px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: threedface;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: groove;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 2px;
+    border-top-color: threedface;
+    border-top-style: groove;
+    border-top-width: 2px;
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-bottom: 0.75em;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    padding-top: 0.35em;
+}
+label {
+    cursor: default;
+}
+input {
+    -moz-appearance: textfield;
+    -moz-binding: url("chrome://global/content/platformHTMLBindings.xml#inputFields");
+    -moz-user-select: text;
+    -x-system-font: -moz-field;
+    background-color: -moz-field;
+    border-bottom-color: threedface;
+    border-bottom-style: inset;
+    border-bottom-width: 2px;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: threedface;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: inset;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 2px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: threedface;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: inset;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 2px;
+    border-top-color: threedface;
+    border-top-style: inset;
+    border-top-width: 2px;
+    color: -moz-fieldtext;
+    cursor: text;
+    font-family: -moz-use-system-font;
+    font-size: -moz-use-system-font;
+    font-size-adjust: -moz-use-system-font;
+    font-stretch: -moz-use-system-font;
+    font-style: -moz-use-system-font;
+    font-variant: -moz-use-system-font;
+    font-weight: -moz-use-system-font;
+    letter-spacing: normal;
+    line-height: normal !important;
+    padding-bottom: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1px;
+    text-align: start;
+    text-indent: 0;
+    text-rendering: optimizelegibility;
+    text-shadow: none;
+    text-transform: none;
+    word-spacing: normal;
+}
+input > .anonymous-div {
+    line-height: -moz-block-height;
+    word-wrap: normal !important;
+}
+textarea {
+    -moz-appearance: textfield-multiline;
+    -moz-binding: url("chrome://global/content/platformHTMLBindings.xml#textAreas");
+    -moz-user-select: text;
+    -x-system-font: none;
+    background-color: -moz-field;
+    border-bottom-color: threedface;
+    border-bottom-style: inset;
+    border-bottom-width: 2px;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: threedface;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: inset;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 2px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: threedface;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: inset;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 2px;
+    border-top-color: threedface;
+    border-top-style: inset;
+    border-top-width: 2px;
+    color: -moz-fieldtext;
+    cursor: text;
+    font-family: -moz-fixed;
+    font-size: medium;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 1px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1px;
+    text-align: start;
+    text-indent: 0;
+    text-rendering: optimizelegibility;
+    text-shadow: none;
+    text-transform: none;
+    vertical-align: text-bottom;
+    word-spacing: normal;
+    word-wrap: break-word;
+}
+textarea > scrollbar {
+    cursor: default;
+}
+textarea > .anonymous-div, input > .anonymous-div {
+    border-bottom-color: -moz-use-text-color !important;
+    border-bottom-style: none !important;
+    border-bottom-width: 0 !important;
+    border-left-color-ltr-source: physical !important;
+    border-left-color-rtl-source: physical !important;
+    border-left-color-value: -moz-use-text-color !important;
+    border-left-style-ltr-source: physical !important;
+    border-left-style-rtl-source: physical !important;
+    border-left-style-value: none !important;
+    border-left-width-ltr-source: physical !important;
+    border-left-width-rtl-source: physical !important;
+    border-left-width-value: 0 !important;
+    border-right-color-ltr-source: physical !important;
+    border-right-color-rtl-source: physical !important;
+    border-right-color-value: -moz-use-text-color !important;
+    border-right-style-ltr-source: physical !important;
+    border-right-style-rtl-source: physical !important;
+    border-right-style-value: none !important;
+    border-right-width-ltr-source: physical !important;
+    border-right-width-rtl-source: physical !important;
+    border-right-width-value: 0 !important;
+    border-top-color: -moz-use-text-color !important;
+    border-top-style: none !important;
+    border-top-width: 0 !important;
+    ime-mode: inherit;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-bottom: 0;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 0;
+    text-decoration: inherit;
+    white-space: pre;
+}
+textarea > .anonymous-div.wrap, input > .anonymous-div.wrap {
+    white-space: pre-wrap;
+}
+textarea > .anonymous-div.inherit-overflow, input > .anonymous-div.inherit-overflow {
+    overflow-x: inherit;
+    overflow-y: inherit;
+}
+input:-moz-read-write, textarea:-moz-read-write {
+    -moz-user-modify: read-write !important;
+}
+select {
+    -moz-appearance: menulist;
+    -moz-box-sizing: border-box;
+    -moz-user-select: none;
+    -x-system-font: -moz-list;
+    background-color: -moz-combobox;
+    border-bottom-color: threedface;
+    border-bottom-style: inset;
+    border-bottom-width: 2px;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: threedface;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: inset;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 2px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: threedface;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: inset;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 2px;
+    border-top-color: threedface;
+    border-top-style: inset;
+    border-top-width: 2px;
+    color: -moz-comboboxtext;
+    cursor: default;
+    font-family: -moz-use-system-font;
+    font-size: -moz-use-system-font;
+    font-size-adjust: -moz-use-system-font;
+    font-stretch: -moz-use-system-font;
+    font-style: -moz-use-system-font;
+    font-variant: -moz-use-system-font;
+    font-weight: -moz-use-system-font;
+    line-height: normal !important;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    overflow-x: -moz-hidden-unscrollable;
+    overflow-y: -moz-hidden-unscrollable;
+    text-align: start;
+    text-indent: 0;
+    text-shadow: none;
+    white-space: nowrap !important;
+    word-wrap: normal !important;
+}
+select[size], select[multiple], select[size][multiple] {
+    -moz-appearance: listbox;
+    background-color: -moz-field;
+    color: -moz-fieldtext;
+    padding-bottom: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1px;
+    vertical-align: text-bottom;
+}
+select[size="0"], select[size="1"] {
+    -moz-appearance: menulist;
+    background-color: -moz-combobox;
+    color: -moz-comboboxtext;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    vertical-align: baseline;
+}
+select > input[type="button"] {
+    -moz-appearance: menulist-button;
+    -moz-box-sizing: border-box !important;
+    background-image: url("arrow.gif") !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    height: 100% !important;
+    position: static !important;
+    vertical-align: top !important;
+    white-space: nowrap;
+    width: 12px;
+}
+select > input[type="button"]:active {
+    background-image: url("arrowd.gif") !important;
+}
+select:empty {
+    width: 2.5em;
+}
+*|*::-moz-display-comboboxcontrol-frame {
+    -moz-box-sizing: border-box !important;
+    -moz-user-select: none;
+    background-color: inherit;
+    color: inherit;
+    height: 100% !important;
+    overflow-x: -moz-hidden-unscrollable;
+    overflow-y: -moz-hidden-unscrollable;
+    padding-bottom: 1px;
+    padding-end-value: 0;
+    padding-left-ltr-source: logical;
+    padding-left-rtl-source: logical;
+    padding-right-ltr-source: logical;
+    padding-right-rtl-source: logical;
+    padding-start-value: 4px;
+    padding-top: 1px;
+    text-align: inherit;
+    white-space: nowrap;
+}
+select::-moz-scrolled-content {
+    display: block !important;
+}
+option {
+    -moz-user-select: none;
+    display: block;
+    float: none !important;
+    line-height: normal !important;
+    min-height: 1em;
+    position: static !important;
+    text-indent: 0;
+    white-space: nowrap !important;
+    word-wrap: normal !important;
+}
+select > option {
+    padding-bottom: 0;
+    padding-end-value: 5px;
+    padding-left-ltr-source: logical;
+    padding-left-rtl-source: logical;
+    padding-right-ltr-source: logical;
+    padding-right-rtl-source: logical;
+    padding-start-value: 3px;
+    padding-top: 0;
+}
+option:checked {
+    background-color: -moz-html-cellhighlight !important;
+    color: -moz-html-cellhighlighttext !important;
+}
+select:focus > option:checked, select:focus > optgroup > option:checked {
+    background-color: highlight !important;
+    color: highlighttext !important;
+}
+optgroup {
+    -moz-user-select: none;
+    -x-system-font: -moz-list;
+    display: block;
+    float: none !important;
+    font-family: -moz-use-system-font;
+    font-size: inherit;
+    font-size-adjust: -moz-use-system-font;
+    font-stretch: -moz-use-system-font;
+    font-style: italic;
+    font-variant: -moz-use-system-font;
+    font-weight: bold;
+    line-height: normal !important;
+    position: static !important;
+    text-indent: 0;
+    white-space: nowrap !important;
+    word-wrap: normal !important;
+}
+optgroup > option {
+    font-style: normal;
+    font-weight: normal;
+    padding-left-ltr-source: logical;
+    padding-right-rtl-source: logical;
+    padding-start-value: 20px;
+}
+optgroup:before {
+    content: attr(label);
+    display: block;
+}
+*|*::-moz-dropdown-list {
+    -moz-user-select: none;
+    background-color: inherit;
+    border-bottom-color: black !important;
+    border-bottom-style: outset !important;
+    border-bottom-width: 1px !important;
+    border-left-color-ltr-source: physical !important;
+    border-left-color-rtl-source: physical !important;
+    border-left-color-value: black !important;
+    border-left-style-ltr-source: physical !important;
+    border-left-style-rtl-source: physical !important;
+    border-left-style-value: outset !important;
+    border-left-width-ltr-source: physical !important;
+    border-left-width-rtl-source: physical !important;
+    border-left-width-value: 2px !important;
+    border-right-color-ltr-source: physical !important;
+    border-right-color-rtl-source: physical !important;
+    border-right-color-value: black !important;
+    border-right-style-ltr-source: physical !important;
+    border-right-style-rtl-source: physical !important;
+    border-right-style-value: outset !important;
+    border-right-width-ltr-source: physical !important;
+    border-right-width-rtl-source: physical !important;
+    border-right-width-value: 1px !important;
+    border-top-color: black !important;
+    border-top-style: outset !important;
+    border-top-width: 1px !important;
+    float: none !important;
+    position: static !important;
+    z-index: 2147483647;
+}
+input[disabled], textarea[disabled], option[disabled], optgroup[disabled], select[disabled] {
+    -moz-user-focus: ignore;
+    -moz-user-input: disabled;
+    background-color: threedface;
+    color: graytext;
+    cursor: inherit;
+}
+option[disabled], optgroup[disabled] {
+    background-color: transparent;
+}
+input[type="hidden"] {
+    -moz-appearance: none;
+    -moz-binding: none;
+    -moz-user-focus: ignore;
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: -moz-use-text-color;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: none;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 0;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: -moz-use-text-color;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: none;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 0;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: 0;
+    cursor: auto;
+    display: none !important;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+input[type="image"] {
+    -moz-appearance: none;
+    -moz-binding: none;
+    background-color: transparent;
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: -moz-use-text-color;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: none;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: medium;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: -moz-use-text-color;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: none;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: medium;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: medium;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: small;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+input[type="image"][disabled] {
+    cursor: inherit;
+}
+input[type="image"]:focus {
+    outline-color: -moz-use-text-color;
+    outline-style: dotted;
+    outline-width: 1px;
+}
+input[type="file"] {
+    -moz-appearance: none;
+    -moz-binding: none;
+    border-bottom-style: none !important;
+    border-left-style-ltr-source: physical !important;
+    border-left-style-rtl-source: physical !important;
+    border-left-style-value: none !important;
+    border-right-style-ltr-source: physical !important;
+    border-right-style-rtl-source: physical !important;
+    border-right-style-value: none !important;
+    border-top-style: none !important;
+    cursor: default;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    white-space: nowrap;
+}
+input[type="file"] > input[type="text"] {
+    background-color: inherit;
+    border-bottom-color: inherit;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: inherit;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: inherit;
+    border-top-color: inherit;
+    color: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+}
+input[type="file"] > input[type="button"] {
+    font-size: inherit;
+    height: inherit;
+    letter-spacing: inherit;
+}
+input[type="radio"] {
+    -moz-appearance: radio;
+    -moz-border-radius-bottomleft: 100% !important;
+    -moz-border-radius-bottomright: 100% !important;
+    -moz-border-radius-topleft: 100% !important;
+    -moz-border-radius-topright: 100% !important;
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+input[type="checkbox"] {
+    -moz-appearance: checkbox;
+    -moz-border-radius-bottomleft: 0 !important;
+    -moz-border-radius-bottomright: 0 !important;
+    -moz-border-radius-topleft: 0 !important;
+    -moz-border-radius-topright: 0 !important;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+input[type="radio"], input[type="checkbox"] {
+    -moz-binding: none;
+    -moz-box-sizing: border-box;
+    background-color: -moz-field !important;
+    border-bottom-color: threedface !important;
+    border-bottom-style: inset !important;
+    border-bottom-width: 2px !important;
+    border-left-color-ltr-source: physical !important;
+    border-left-color-rtl-source: physical !important;
+    border-left-color-value: threedface !important;
+    border-left-style-ltr-source: physical !important;
+    border-left-style-rtl-source: physical !important;
+    border-left-style-value: inset !important;
+    border-left-width-ltr-source: physical !important;
+    border-left-width-rtl-source: physical !important;
+    border-left-width-value: 2px !important;
+    border-right-color-ltr-source: physical !important;
+    border-right-color-rtl-source: physical !important;
+    border-right-color-value: threedface !important;
+    border-right-style-ltr-source: physical !important;
+    border-right-style-rtl-source: physical !important;
+    border-right-style-value: inset !important;
+    border-right-width-ltr-source: physical !important;
+    border-right-width-rtl-source: physical !important;
+    border-right-width-value: 2px !important;
+    border-top-color: threedface !important;
+    border-top-style: inset !important;
+    border-top-width: 2px !important;
+    color: -moz-fieldtext !important;
+    cursor: default;
+    height: 13px;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    width: 13px;
+}
+input[type="radio"][disabled], input[type="radio"][disabled]:active, input[type="radio"][disabled]:hover, input[type="radio"][disabled]:hover:active, input[type="checkbox"][disabled], input[type="checkbox"][disabled]:active, input[type="checkbox"][disabled]:hover, input[type="checkbox"][disabled]:hover:active {
+    background-color: threedface !important;
+    border-bottom-color: threedshadow !important;
+    border-bottom-style: inset !important;
+    border-bottom-width: 1px !important;
+    border-left-color-ltr-source: physical !important;
+    border-left-color-rtl-source: physical !important;
+    border-left-color-value: threedshadow !important;
+    border-left-style-ltr-source: physical !important;
+    border-left-style-rtl-source: physical !important;
+    border-left-style-value: inset !important;
+    border-left-width-ltr-source: physical !important;
+    border-left-width-rtl-source: physical !important;
+    border-left-width-value: 1px !important;
+    border-right-color-ltr-source: physical !important;
+    border-right-color-rtl-source: physical !important;
+    border-right-color-value: threedshadow !important;
+    border-right-style-ltr-source: physical !important;
+    border-right-style-rtl-source: physical !important;
+    border-right-style-value: inset !important;
+    border-right-width-ltr-source: physical !important;
+    border-right-width-rtl-source: physical !important;
+    border-right-width-value: 1px !important;
+    border-top-color: threedshadow !important;
+    border-top-style: inset !important;
+    border-top-width: 1px !important;
+    color: graytext !important;
+    cursor: inherit;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+}
+input[type="checkbox"]:focus, input[type="radio"]:focus {
+    border-bottom-style: groove !important;
+    border-left-style-ltr-source: physical !important;
+    border-left-style-rtl-source: physical !important;
+    border-left-style-value: groove !important;
+    border-right-style-ltr-source: physical !important;
+    border-right-style-rtl-source: physical !important;
+    border-right-style-value: groove !important;
+    border-top-style: groove !important;
+}
+input[type="checkbox"]:hover:active, input[type="radio"]:hover:active {
+    background-color: threedface !important;
+    border-bottom-style: inset !important;
+    border-left-style-ltr-source: physical !important;
+    border-left-style-rtl-source: physical !important;
+    border-left-style-value: inset !important;
+    border-right-style-ltr-source: physical !important;
+    border-right-style-rtl-source: physical !important;
+    border-right-style-value: inset !important;
+    border-top-style: inset !important;
+}
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+    -moz-appearance: button;
+    -moz-binding: none;
+    -moz-box-sizing: border-box;
+    -moz-user-select: none;
+    -x-system-font: -moz-button;
+    background-color: buttonface;
+    border-bottom-color: buttonface;
+    border-bottom-style: outset;
+    border-bottom-width: 2px;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: buttonface;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: outset;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 2px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: buttonface;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: outset;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 2px;
+    border-top-color: buttonface;
+    border-top-style: outset;
+    border-top-width: 2px;
+    color: buttontext;
+    cursor: default;
+    font-family: -moz-use-system-font;
+    font-size: -moz-use-system-font;
+    font-size-adjust: -moz-use-system-font;
+    font-stretch: -moz-use-system-font;
+    font-style: -moz-use-system-font;
+    font-variant: -moz-use-system-font;
+    font-weight: -moz-use-system-font;
+    line-height: normal !important;
+    padding-bottom: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 0;
+    text-align: center;
+    text-shadow: none;
+    white-space: pre;
+}
+button {
+    text-indent: 0;
+    white-space: inherit;
+}
+*|*::-moz-button-content {
+    display: block;
+}
+button:hover, input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover {
+    background-color: -moz-buttonhoverface;
+    color: -moz-buttonhovertext;
+}
+button:active:hover, input[type="reset"]:active:hover, input[type="button"]:active:hover, input[type="submit"]:active:hover {
+    background-color: buttonface;
+    border-bottom-style: inset;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: inset;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: inset;
+    border-top-style: inset;
+    color: buttontext;
+    padding-bottom: 0;
+    padding-left: 7px;
+    padding-right: 5px;
+    padding-top: 0;
+}
+button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border-bottom-color: transparent;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: transparent;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: dotted;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 1px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: transparent;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: dotted;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 1px;
+    border-top-color: transparent;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    padding-bottom: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 0;
+}
+button:focus::-moz-focus-inner, input[type="reset"]:focus::-moz-focus-inner, input[type="button"]:focus::-moz-focus-inner, input[type="submit"]:focus::-moz-focus-inner, input[type="file"] > input[type="button"]:focus::-moz-focus-inner {
+    border-bottom-color: buttontext;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: buttontext;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: buttontext;
+    border-top-color: buttontext;
+}
+button[disabled]:active, button[disabled], input[type="reset"][disabled]:active, input[type="reset"][disabled], input[type="button"][disabled]:active, input[type="button"][disabled], select[disabled] > input[type="button"], select[disabled] > input[type="button"]:active, input[type="submit"][disabled]:active, input[type="submit"][disabled] {
+    border-bottom-color: buttonface;
+    border-bottom-style: outset;
+    border-bottom-width: 2px;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: buttonface;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: outset;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 2px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: buttonface;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: outset;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 2px;
+    border-top-color: buttonface;
+    border-top-style: outset;
+    border-top-width: 2px;
+    color: graytext;
+    cursor: inherit;
+    padding-bottom: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 0;
+}
+textarea > .anonymous-div, input > .anonymous-div, *|*::-moz-button-content, *|*::-moz-display-comboboxcontrol-frame, optgroup:before {
+    unicode-bidi: inherit;
+}
+input[type="file"] > input[type="text"] {
+    direction: ltr !important;
+    text-align: inherit;
+}
+input, textarea, select, button {
+    -moz-user-input: none !important;
+}
+input[type="file"] {
+    height: 2em;
+}

@@ -1,5 +1,6 @@
+<div id="content_container">
 <p id="notice"><%= notice %></p>
-
+<div id="box">
 <p>
   <b>Name:</b>
   <%= @user.name %>
@@ -20,16 +21,8 @@
   <%= @user.salt %>
 </p>
 
-<p>
-  <b>Created date:</b>
-  <%= @user.created_date %>
-</p>
-
-<p>
-  <b>Last modified date:</b>
-  <%= @user.last_modified_date %>
-</p>
-
-
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+
+</div>
+</div>
