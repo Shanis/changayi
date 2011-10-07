@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+	before_filter :login_required, :only => :show
 	
   # GET /users
   # GET /users.json
@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   
   def show
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -39,7 +39,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
   end
   
   # GET /users/1/edit
@@ -68,10 +68,10 @@ class UsersController < ApplicationController
   # PUT /users/1
   # PUT /users/1.json
   def update
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
 
     respond_to do |format|
-      if @user.update_attributes(params[:user])
+      if @user.update_attributes(session[:user_id])
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { head :ok }
       else
@@ -84,7 +84,7 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
     @user.destroy
 
     respond_to do |format|

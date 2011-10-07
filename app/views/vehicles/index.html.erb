@@ -1,57 +1,45 @@
-<h1>Listing vehicles</h1>
+<div class="span-7">
+	<div id="box">
+		<h3>Filter your Search</h3>
+		<div id="search">
+		Search field here
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+</div>
 
-<table>
-  <tr>
-    <th>Year</th>
-    <th>Make</th>
-    <th>Model</th>
-    <th>Style</th>
-    <th>Mileage</th>
-    <th>State</th>
-    <th>City</th>
-    <th>Sale price</th>
-    <th>Photo url</th>
-    <th>Status</th>
-    <th>Short description</th>
-    <th>Details</th>
-    <th>Vehicle type</th>
-    <th>License plate</th>
-    <th>Contact name</th>
-    <th>Contact phone</th>
-    <th>Contact email</th>
-    <th>Created by</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="span-16" id="box">
 
-<% @vehicles.each do |vehicle| %>
-  <tr>
-    <td><%= vehicle.year %></td>
-    <td><%= vehicle.make %></td>
-    <td><%= vehicle.model %></td>
-    <td><%= vehicle.style %></td>
-    <td><%= vehicle.mileage %></td>
-    <td><%= vehicle.state %></td>
-    <td><%= vehicle.city %></td>
-    <td><%= vehicle.sale_price %></td>
-    <td><%= vehicle.photo_URL %></td>
-    <td><%= vehicle.status %></td>
-    <td><%= vehicle.short_description %></td>
-    <td><%= vehicle.details %></td>
-    <td><%= vehicle.vehicle_type %></td>
-    <td><%= vehicle.license_plate %></td>
-    <td><%= vehicle.contact_name %></td>
-    <td><%= vehicle.contact_phone %></td>
-    <td><%= vehicle.contact_email %></td>
-    <td><%= vehicle.created_by %></td>
-    <td><%= link_to 'Show', vehicle %></td>
-    <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
-    <td><%= link_to 'Destroy', vehicle, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
 
-<br />
+	<div class="span-16 last result_header">Search Results</div>
+	<% @vehicles.each do |vehicle| %>
 
-<%= link_to 'New Vehicle', new_vehicle_path %>
+	<div class="span-16 last" id="news_item_box">
+
+		<div  class="span-7 result_image">
+			<td><%= image_tag vehicle.photo_URL,:width => '240' %></td>
+		</div>
+		<div class="span-8 last">
+			<div class="span-8 last result_title">
+				<%= vehicle.make %> <%= vehicle.model %> <%= vehicle.style %>
+			</div>
+			<div class="span-2 result_bold"> Model Year	</div>
+			<div class="span-6 last">
+				<%= vehicle.year %>
+			</div>
+			<div class="span-2 result_bold"> Mileage </div>
+			<div class="span-6 last">
+				<%= vehicle.mileage %>
+			</div>
+			<div class="span-2 result_bold"> Sale Price	</div>
+			<div class="span-6 last">
+				<%= vehicle.sale_price %>
+			</div>
+			<div class="span-2 result_bold"> Details </div>
+			<div class="span-6 last">
+				<%= vehicle.short_description %>
+			</div>
+		</div>
+	</div>
+	<% end %>
+</div>

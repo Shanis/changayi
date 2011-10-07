@@ -2,35 +2,38 @@
 <html>
 <head>
 	<title><%= title %></title>
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->    
-	<%= stylesheet_link_tag "base" %>
-	<%= stylesheet_link_tag "application" %>
+	<%= stylesheet_link_tag 'application'%>
+	<%= stylesheet_link_tag 'blueprint/screen', 'application' %>
+	<!--[if lt IE 8]>
+		<%= stylesheet_link_tag 'blueprint/ie' %>
+	<![endif]-->
+	
 	<%= csrf_meta_tags %>
 </head>
 <body>
-	<div id="container" class="clearfix">
-		<div id="header_container">
-			<div id="header">
-				<div id="header_inner">
-					<%= render 'layouts/header' %>
-				</div>
+	<div id="main">
+	<div id="main_header">
+		<div class="container grid">
+			<div class="span-24" id="header_container ">
+				<%= render 'layouts/header' %>
 			</div>
-		</div>
-		<div id="main" class="clearfix">
-			<div id="content_container">
-			<%= yield %>
-			</div>
-		</div>
-	
-		<div class="footer_wrapper_top">
-				<div class="footer">
-					<ul>
-						<%= render 'layouts/footer' %>
-					</ul>
-				</div>
 		</div>
 	</div>
+	<div id="main_content">
+		<div class="container">
+			<div class="span-24" id="container_content">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+	<div id="main_footer">
+		<div class="container">
+			<div class="span-24" id="footer_links">
+				<%= render 'layouts/footer' %>
+			</div>
+		</div>
+	</div>
+	</div>
+
 </body>
 </html>

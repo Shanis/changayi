@@ -1,2 +1,56 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<div class="span-6">
+	<div id="box">
+		<h3>Find your Car</h3>
+		<div id="search">
+			<%= form_tag("/search", :method => "get") do %>
+			<%= label_tag(:q, "Search for:") %>
+			<%= text_field_tag(:q) %>
+			<%= submit_tag "Search", :class=>"button" %>
+			<% end %>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+</div>
+<div class="span-13" id="box">
+	<h2>New in the Market</h2>
+		<div class="span-13 last" id="news_item_box">
+			<div  class="span-5 gallerycontainer">
+				<a class="thumbnail" href="#thumb"><img src="assets/2012-Toyota-Camry.jpg" width="90%" border="0" /><span><img src="assets/2012-Toyota-Camry.jpg" width="440px"/><br />Camry 2012</span></a>
+			</div>
+			<div class="span-8 last">
+				<h3>Toyota Camry 2012</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+		<div class="span-13 last" id="news_item_box">
+			<div  class="span-5 gallerycontainer">
+				<a class="thumbnail" href="#thumb"><img src="assets/2012-Nissan-Altima.jpg" width="90%" border="0" /><span><img src="assets/2012-Nissan-Altima.jpg" width="440px"/><br />Nissan Altima 2012</span></a>
+			</div>
+			<div class="span-8 last">
+				<h3>Nissan Altima 2012</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+		
+		<div class="span-13 last" id="news_item_box">
+			<div  class="span-5 gallerycontainer">
+				<a class="thumbnail" href="#thumb"><img src="assets/2012-Nissan-Leaf.jpg" width="90%" border="0" /><span><img src="assets/2012-Nissan-Leaf.jpg" width="440px"/><br />Nissan Leaf 2012</span></a>
+			</div>
+			<div class="span-8 last">
+				<h3>Nissan Leaf 2012</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+		<div class="span-13 last" id="news_item_box">
+			<div  class="span-5 gallerycontainer">
+				<a class="thumbnail" href="#thumb"><img src="assets/2012-Toyota-Sienna.jpg" width="90%" border="0" /><span><img src="assets/2012-Toyota-Sienna.jpg" width="440px"/><br />Toyota Sienna 2012</span></a>
+			</div>
+			<div class="span-8 last">
+				<h3>Toyota Sienna 2012</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+</div>
+<div class="span-4 last" id="box">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>

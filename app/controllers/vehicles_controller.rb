@@ -20,6 +20,17 @@ class VehiclesController < ApplicationController
       format.json { render json: @vehicle }
     end
   end
+  
+  # GET /vehicles/1
+  # GET /vehicles/1.json
+  def show
+    @vehicle = Vehicle.find(params[:year])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @vehicle }
+    end
+  end
 
   # GET /vehicles/new
   # GET /vehicles/new.json

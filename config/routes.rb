@@ -24,7 +24,7 @@ Changayi::Application.routes.draw do
   match '/signup',  :to => 'users#new'
   match '/buy',  :to => 'vehicles#index'
   match '/sell',  :to => 'vehicles#new'
-  match '/login', :to => 'session#new'
+  match '/login', :to => 'sessions#new'
   match '/research', :to => 'pages#research'
   match '/reviews', :to => 'pages#reviews'
   match '/about', :to => 'pages#about'
@@ -34,9 +34,12 @@ Changayi::Application.routes.draw do
   match '/contact', :to => 'pages#contact'
 
 
+
 get "log_out" => "sessions#destroy", :as => "log_out"
 get "log_in" => "sessions#new", :as => "log_in"
 get "sign_up" => "users#new", :as => "sign_up"
+get "accounts" => "users#show", :as => "accounts"
+get "search" => "vehicles#find", :as => "search"
   
 	
   # The priority is based upon order of creation:

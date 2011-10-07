@@ -1,28 +1,17 @@
-<div id="content_container">
 <p id="notice"><%= notice %></p>
-<div id="box">
+<div>
 <p>
   <b>Name:</b>
   <%= @user.name %>
 </p>
 
 <p>
-  <b>Email:</b>
-  <%= @user.email %>
+  <b>Email:</b> <%= @user.email %>
 </p>
 
-<p>
-  <b>Hashed password:</b>
-  <%= @user.hashed_password %>
-</p>
-
-<p>
-  <b>Salt:</b>
-  <%= @user.salt %>
-</p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
 
 </div>
-</div>
+

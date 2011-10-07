@@ -5,3 +5,478 @@
  *= require_self
  *= require_tree . 
 */
+
+ul, ol {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+body {
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    -x-system-font: none;
+    background-attachment: scroll;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    color: #4E443C;
+}
+
+input[type="submit"] {
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    background-attachment: scroll;
+    background-color: #369EC1;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #80C1D8 2%, #369EC1);
+    background-position: 0 0;
+    background-repeat: repeat;
+    border-color: #369EC1;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1em;
+    padding-bottom: 7px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 7px;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#main{
+    width: 100%;
+    position: relative;
+	height: 100%;
+}
+
+#main_content {
+    min-width: 480px;
+    position: relative;
+	height: 100%;
+	top: 38px;
+	bottom: 60px;
+}
+
+
+
+#main_header {
+    -moz-box-shadow: 0px 2px 2px 0 #587634;
+    background-color: #282828;
+    background-image: -moz-linear-gradient(center top , #333333 0%, #1A1A1A 100%);
+    border-bottom-color: #54C2DC;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    height: 38px;
+    left: 0;
+    top: 0;
+	position: fixed;
+    width: 100%;
+    z-index: 100;
+	display: block;
+}
+
+#header_container {
+    height: auto !important;
+    min-height: 38px;
+}
+
+#logo h1 a {
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("/assets/logo.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    height: 37px;
+    width: 100%;
+	text-indent: -10000px;
+}
+
+
+#header_nav {
+    float: left;
+   	position: relative;
+	overflow:hidden;
+	float: left;
+	white-space:nowrap;
+	display: inline;
+	height: 37px;
+}
+
+#header_nav li {
+    position: relative;
+	font-size: 1.2em;
+    text-align: center;
+    text-shadow: 0 1px 1px grey;
+}
+
+#header_nav li a {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 9px;
+}
+
+#header_nav ul a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+#header_nav ul a:hover {
+    background-color: transparent;
+    border-top-color: #86B226;
+    border-top-style: solid;
+    border-top-width: 3px;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    text-decoration: none;
+}
+
+#header_nav ul li {
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    white-space: nowrap;
+}
+
+#account_links {
+    float: right;
+   	position: relative;
+	overflow:hidden;
+	white-space:nowrap;
+	display: inline;
+	padding-left: 0;
+    padding-right: 0;
+}
+
+#account_links li {
+    position: relative;
+	font-size: 0.9em;
+    text-align: center;
+    text-shadow: 0 1px 1px grey;
+}
+
+#account_links li a {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 11px;
+}
+
+#account_links ul a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+#account_links ul a:hover {
+    background-color: transparent;
+    border-top-color: #86B226;
+    border-top-style: solid;
+    border-top-width: 3px;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    text-decoration: none;
+}
+
+#account_links ul li {
+    float: right;
+    padding-left: 0;
+    padding-right: 0;
+    white-space: nowrap;
+	
+}
+
+#main{
+    height: auto !important;
+    padding-bottom: 0px;
+	position: relative;    
+	margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 100%;
+    background-attachment: scroll;
+    background-color: #FFFFFF;
+	/*background-image: #b4e391; /* Old browsers */
+	/*background-image: -moz-linear-gradient(left, #96BE68 0%, #ADCC89 30%, #ADCC89 50%, #ADCC89 70%, #96BE68 100%); /* FF3.6+ */
+	background-image: #FFFFFF;
+	background-position: 0 0;
+    background-repeat: repeat;
+}
+
+#container_content{
+    background-attachment: scroll;
+    background-color: white;
+    background-image: white;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 30px;
+}
+
+#box{
+    -moz-box-shadow: 1px 2px 3px 0 #CCCCCC;
+    background-color: #EBEBEB;
+    background-image: -moz-linear-gradient(center top , #FAFAFA 0%, #EBEBEB 100%);
+	-moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    background-attachment: scroll;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 2px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    position: relative;
+	margin-bottom: 10px;
+}
+
+#news_item_box{
+	background-color: #FFFFFF;
+    border-color: #C9D3D6;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+	padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 8px;
+	margin-bottom: 8px;
+}
+}
+
+
+#content_Signup{
+    -moz-box-shadow: -2px 1px 2px 0 #587634;
+    background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center top , #FFFFFF 0%, #CCCCCC 100%);
+    border-bottom-color: #54C2DC;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    left: 230;
+    top: 230;
+	position: relative;
+    width: 200px;
+    z-index: 100;
+	display: block;
+	float: right;
+}
+
+
+#main_footer {
+    background-color: #282828;
+    background-image: -moz-linear-gradient(center top , #1A1A1A 0%, #333333 100%);
+    border-top-color: #54C2DC;
+    border-top-style: solid;
+    border-top-width: 3px;
+    height: 40px;
+    left: 0;
+    top: 0;
+	position: relative;
+    width: 100%;
+    z-index: 100;
+	display: block;
+}
+
+#footer_links {
+    float: left;
+   	position: relative;
+	overflow:hidden;
+	white-space:nowrap;
+	display: inline;
+}
+
+#footer_links li {
+    position: relative;
+	font-size: 1em;
+    text-align: center;
+}
+
+
+#footer_links li a {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 3px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+#footer_links ul a {
+    color: #666666;
+    text-decoration: none;
+}
+
+#footer_links ul a:hover {
+    background-color: transparent;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-decoration: none;
+}
+
+#footer_links ul li {
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    white-space: nowrap;
+	
+}
+
+.gallerycontainer{
+position: relative;
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+}
+
+.thumbnail img{
+border: 1px solid white;
+margin: 5px 5px 5px 8px;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+.thumbnail:hover img{
+border: 1px solid blue;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: lightyellow;
+padding: 5px;
+left: -1000px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: -100px;
+left: -450px; /*position where enlarged image should offset horizontally */
+z-index: 200;
+}
+
+.result_header {
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.result_title {
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.result_bold {
+    color: #333333;
+    font-weight: bold;
+}
+
+.result_image{
+	margin-bottom: 3px;
+    margin-left: 8px;
+    margin-right: 0;
+    margin-top: 0px;
+}
+
+
+.button {
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    background-attachment: scroll;
+    background-color: #369EC1;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #80C1D8 2%, #369EC1);
+    background-position: 0 0;
+    background-repeat: repeat;
+    border-color: #369EC1;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1em;
+    padding-bottom: 7px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 7px;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
+}
+.button:hover, .button:visited {
+    color: white;
+}
+.button:hover {
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #69B6D1 2%, #2F8AA9);
+    border-bottom-color: #2F8AA9;
+    border-top-color: #2F8AA9;
+    text-decoration: none;
+}
+.button:active {
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
+    background-image: -moz-linear-gradient(center top , #80C1D8, #369EC1);
+}
+.button:visited {
+    color: white;
+}

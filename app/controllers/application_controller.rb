@@ -9,12 +9,6 @@ class ApplicationController < ActionController::Base
 	end
 	
 	def login_required
-    if session[:user]
-      return true
-    end
-    flash[:warning]='Please login to continue'
-    session[:return_to]=request.url
-    redirect_to "log in"
-    return false 
+	redirect_to('/login') if current_user.blank?
   end
 end
