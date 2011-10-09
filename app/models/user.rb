@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+has_one :contact
+
 attr_accessible :name, :email, :password, :password_confirmation
 attr_accessor :password
 attr_protected :id, :salt

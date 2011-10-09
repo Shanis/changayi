@@ -28,10 +28,6 @@ input[type="submit"] {
     -moz-background-clip: border;
     -moz-background-origin: padding;
     -moz-background-size: auto auto;
-    -moz-border-radius-bottomleft: 6px;
-    -moz-border-radius-bottomright: 6px;
-    -moz-border-radius-topleft: 6px;
-    -moz-border-radius-topright: 6px;
     -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     background-attachment: scroll;
     background-color: #369EC1;
@@ -45,7 +41,7 @@ input[type="submit"] {
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1em;
     padding-bottom: 7px;
     padding-left: 16px;
@@ -53,6 +49,17 @@ input[type="submit"] {
     padding-top: 7px;
     text-decoration: none;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #69B6D1 2%, #2F8AA9);
+    border-bottom-color: #2F8AA9;
+    border-top-color: #2F8AA9;
+    text-decoration: none;
+}
+input[type="submit"]:active {
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
+    background-image: -moz-linear-gradient(center top , #80C1D8, #369EC1);
 }
 
 #main{
@@ -464,24 +471,27 @@ z-index: 200;
     text-decoration: none;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
 }
-.button:hover, .button:visited {
-    color: white;
-}
-.button:hover {
-    background-image: -moz-linear-gradient(center top , #FFFFFF, #69B6D1 2%, #2F8AA9);
-    border-bottom-color: #2F8AA9;
-    border-top-color: #2F8AA9;
-    text-decoration: none;
-}
-.button:active {
-    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
-    background-image: -moz-linear-gradient(center top , #80C1D8, #369EC1);
-}
-.button:visited {
-    color: white;
-}
 
 
+
+
+.field_with_errors label {
+	color: #FF0000;
+  }
+
+#error_explanation ul li{
+  font-size: 0.9em;
+  list-style: none;
+  color: #FF0000;
+  }
+
+#rightlabel {
+	float: right;
+}
+
+fieldset ol li{
+	list-style: none;
+}
 /* -----------------------------------------------------------------------
 
 
@@ -563,8 +573,12 @@ caption {background:#eee;}
 .bottom {margin-bottom:0;padding-bottom:0;}
 
 /* forms.css */
-label {font-weight:bold;}
-fieldset {padding:0 1.4em 1.4em 1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
+label {    
+	float: right;
+    margin-right: 10px;
+	padding-top: 6px;
+    text-align: right;}
+fieldset {padding:0 1.4em 1.4em 1.4em;margin:0 0 0 0;}
 legend {font-weight:bold;font-size:1.2em;margin-top:-0.2em;margin-bottom:1em;}
 fieldset, #IE8#HACK {padding-top:1.4em;}
 legend, #IE8#HACK {margin-top:0;margin-bottom:0;}

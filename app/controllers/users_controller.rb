@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-	before_filter :login_required, :only => :show
+	before_filter :login_required, :only => [:show,:edit,:update]
 	
   # GET /users
   # GET /users.json
@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   
   def show
-    @user = User.find(session[:user_id])
+    @user = User.find(current_user)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -39,7 +39,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
-    @user = User.find(session[:user_id])
+    @user = User.find(current_user)
   end
   
   # GET /users/1/edit
@@ -56,29 +56,25 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(params[:user])
-      if @user.save
+	respond_to do |format|
+    if @user.save	
         session[:user_id] = @user.id
-        flash[:message] = "Signup successful"
-        redirect_to root_url 
+		format.html { redirect_to root_url, notice: 'User was successfully updated.' }
       else
-        flash[:warning] = "Signup unsuccessful"
+        format.html { render action: "new" }
       end
+	end
   end
 
   # PUT /users/1
   # PUT /users/1.json
   def update
-    @user = User.find(session[:user_id])
-
-    respond_to do |format|
-      if @user.update_attributes(session[:user_id])
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
-        format.json { head :ok }
+    @user = User.find(current_user)
+      if @user.update
+        format.html { redirect_to accounts_path, notice: 'User was successfully updated.' }
       else
         format.html { render action: "edit" }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
       end
-    end
   end
 
   # DELETE /users/1

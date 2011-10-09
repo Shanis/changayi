@@ -17,7 +17,9 @@ Changayi::Application.routes.draw do
   
   resources :vehicles
 
-  resources :users
+  resources :users do
+	resources :contacts
+  end
   
   resources :sessions
   
@@ -31,7 +33,7 @@ Changayi::Application.routes.draw do
   match '/help', :to => 'pages#help'
   match '/terms', :to => 'pages#terms'
   match '/contact', :to => 'pages#contact'
-  match '/contact', :to => 'pages#contact'
+  match '/user/update', :to => 'users#edit'
 
 
 
@@ -40,7 +42,7 @@ get "log_in" => "sessions#new", :as => "log_in"
 get "sign_up" => "users#new", :as => "sign_up"
 get "accounts" => "users#show", :as => "accounts"
 get "search" => "vehicles#find", :as => "search"
-  
+get "edit_user" => "users#edit", :as => "update"
 	
   # The priority is based upon order of creation:
   # first created -> highest priority.

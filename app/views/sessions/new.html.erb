@@ -1,14 +1,28 @@
-<h1>Login</h1>
-<div class="main">
-<%= form_tag sessions_path do %>
-  <p>
-    <%= label_tag :email %><br />
-    <%= text_field_tag :email, params[:email] %>
-  </p>
-  <p>
-    <%= label_tag :password %><br />
-    <%= password_field_tag :password %>
-  </p>
-  <p class="button"><%= submit_tag "Log in" %></p>
-<% end %>
+<div id="content">
+	<div class="span-24">
+		<h3>Sign in</h3>
+	</div>
+	<div class="span-5">
+		<p>asdsadas lksajdlksad lkasjdlksajd askdjsalkd</p>
+	</div>
+	<div class="span-9" id="box">	
+		<%= form_tag sessions_path do %>
+			<fieldset class="inputs">
+				<ol>
+					<li>
+						<div class="span-2"><%= label_tag :email %></div>
+						<div class="span-5 last"><%= text_field_tag :email, params[:email] %></div>
+					</li>
+					<li>
+						<div class="span-2"><%= label_tag :password %></div>
+						<div class="span-5 last"><%= password_field_tag :password %></div>
+					</li>
+					<li>
+						<div class="span-2 push-2 prepend-top"><%= submit_tag "Log in" %></div>
+					</li>
+				</ol>
+			</fieldset>
+		<% end %>
+	</div>
 </div>
+

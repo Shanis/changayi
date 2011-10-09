@@ -1,36 +1,40 @@
-<%= form_for @user do |f| %>
-  <% if @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <% for message in @user.errors.full_messages %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<div class="span-11 push-6" id="box">
+	<%= form_for @user do |f| %>
 
-  <div class="span-10">
+		<fieldset class="inputs">
+			<ol>
+			<li>
+				<div class="span-4"><%= f.label :name %></div>
+				<div class="span-5 last"><%= f.text_field :name %></div>
+			</li>
+			
+			<li>
+				<div class="span-4"><%= f.label :email %></div>
+				<div class="span-5 last"><%= f.text_field :email %></div>
+			</li>
+			<li>
+				<div class="span-4"><%= f.label :password %></div>
+				<div class="span-5 last"><%= f.password_field :password %></div>
+			</li>
+			<li>
+				<div class="span-4"><%= f.label :password_confirmation %></div>
+				<div class="span-5 last"><%= f.password_field :password_confirmation %></div>
+			</li>
+				
+
+			<% if @user.errors.any? %>
+				<div class="span-6 push-4" id="error_explanation">
+				<ul>
+					<% @user.errors.full_messages.each do |msg| %>
+						<li><%= msg %></li>
+					<% end %>
+				</ul>
+				</div>
+			<% end %>
+			<li>
+				<div class="span-4 push-4 prepend-top"><%= f.submit %></div>		
+			</li>
+			</ol>
+		</fieldset>
 	</div>
-    <div class="span-10">
-	<fieldset class="inputs">
-	<p>
-    <%= f.label :name %>: <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :email %>: <%= f.text_field :email %>
-  </p>
-  <p>
-    <%= f.label :password %>: <%= f.password_field :password %>
-  </p>
-  <p>
-    <%= f.label :password_confirmation %>: <%= f.password_field :password_confirmation %>
-  </p>
-  <p class="button"><%= f.submit %></p>
-  </fieldset>
-  
 <% end %>
-	</div>
-	<div class="span-4">
-	</div>
-  

@@ -1,7 +1,7 @@
 <%= form_for(@vehicle) do |f| %>
   <% if @vehicle.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
+      <h2><%= pluralize(@vehicle.errors.count, "error") %> Error On page</h2>
 
       <ul>
       <% @vehicle.errors.full_messages.each do |msg| %>
@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+<div class="span-15" id="box">
   <div class="field">
     <%= f.label :year %><br />
     <%= f.number_field :year %>
@@ -87,3 +87,7 @@
     <%= f.submit %>
   </div>
 <% end %>
+</div>
+<div class="span-8 last" id="box">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
